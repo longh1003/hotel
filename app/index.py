@@ -17,11 +17,6 @@ def home1():
     return render_template('index.html')
 
 
-@app.route('/login.html', methods=['GET'])
-def login_user():
-    return render_template('login.html')
-
-
 @app.route("/admin/login", methods=['GET', 'POST'])
 def login_admin():
     error = ''
